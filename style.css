@@ -19,13 +19,17 @@ body{
     font-weight: 400;
     font-size: 17px;
     line-height: 1.6;
-    color: rgb(23, 22, 22);
+    color: black;
 }
 body{
-    background-image: url(img/bacround.jpg);
+    background-image: url(img/Filed.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 } 
+a.{
+    font-weight: 500;
+}
 h1,
 h2,
 h3,
@@ -34,11 +38,14 @@ h4{
     font-weight: 700;
 
 }
-.header-area{
-    padding: 45PX;
-}
-.container{
+/* Basic css */
+
+.container.{
     padding: 0 15%;
+}
+/* header area css */
+.header-area{
+    padding: 54px;
 }
 a.theme-button{
     text-decoration: none;
@@ -48,11 +55,42 @@ a.theme-button{
     padding: 16px 32px;
     display: inline-block;
     margin-top: 25px;
-    border-radius: 50px;
+    border-radius: 40px;
 }
-.theme-button:hover{
-    background-color: blue;
+a.theme-button:hover{
+    background-color: burlywood;
     color: brown
+}
+a.theme-button-small{
+    text-decoration: none;
+    background-color: aqua;
+    color: brown;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 40px;
+    font-size: 14px;
+}
+a.theme-button-small:hover{
+    background-color: burlywood;
+    color: brown
+}
+.section-heading{
+    text-align: center;
+    margin-bottom: 75px;
+}
+.section-heading h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+
+}
+.section-heading h2{
+    font-size: 17;
+    text-transform: capitalize;
+    color: cornsilk;
+    font-size: 36;
 }
 .header-content{
     display: flex;
@@ -63,7 +101,7 @@ a.theme-button{
     text-decoration: none;
 }
 .logo h1{
-    color: rgb(10, 9, 10);
+    color: white;
     text-transform: uppercase;
     text-align: 20px;
 }
@@ -79,9 +117,10 @@ a.theme-button{
 .main-manu :hover{
     color: aqua;
 }
+/* Hero area */
 
 .hero-area{
-    padding: 80px 0;
+    padding: 60px 0;
 }
 
 
@@ -99,7 +138,50 @@ a.theme-button{
 .hero-image{
     border-radius: 50%;
 }
+/*
+About area css
+ */
+ .about-area{
+    background-color: rgb(252, 230, 230);
+    padding: 80px;
+ }
+ .about-content{
+    display: flex;
+    align-items: center;
+ }
+ .about-image{
+    flex:1 ;
+ }
+ .about-text{
+    flex:1 ;
+ }
+ .about-area h2{
+    font-size: 36px;
+    color: goldenrod;
+    margin-bottom: 20px;
+ }
+ /* 
+ service area css
+ */
+ .service-area{
+    padding: 80px 0;
+ }
 
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    
+}
+.single-service{
+    background-color: blueviolet;
+    padding: 30px;
+}
+.single-service h3{
+    font-size: 26px;
+    color: aliceblue;
+    margin-bottom: 15px;
+}
 
 
 
